@@ -59,3 +59,9 @@ export const login = async (req, res) => {
       .json({ message: "Internal server error", success: false });
   }
 };
+export const checkAuth = async (req, res) => {
+  res.json({
+    success: true,
+    user: req.user,
+  });
+};
