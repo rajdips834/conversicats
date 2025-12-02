@@ -55,31 +55,6 @@ Register/login, join a chat room, and send messages or compressed images.
 
 Images auto-compress before upload for faster transmission.
 
-Project Structure
-
-text
-
-chat-app/
-
-├── backend/
-
-│ ├── server.js # Express + Socket.IO server
-
-│ ├── routes/ # API routes (auth, users)
-
-│ └── middleware/ # Image compression logic
-
-└── frontend/
-
-├── src/
-
-│ ├── components/ # Chat UI, ImageUploader
-
-│ ├── hooks/ # useSocket, useAuth
-
-│ └── app/ # Next.js pages/layout
-
-└── tailwind.config.js
 
 ### Environment Variables
 
