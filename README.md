@@ -1,70 +1,51 @@
-Full-Stack Chat App with Image Compression
+### Full-Stack Chat App with Image Compression
 
 A real-time chat application built with React frontend, Node.js backend, and WebSockets for instant messaging. Supports image compression to optimize file uploads and reduce bandwidth usage during conversations.​
 
-Features
+### Features
 
 Real-time messaging using Socket.IO WebSockets.
-
 Image upload with automatic compression (client-side processing).
-
 User authentication and online status indicators.
-
 Responsive UI with modern React components.
-
 Private and group chat rooms.
-
 Tech Stack
+## Frontend
 
-Frontend
-
-React with hooks and modern conventions ("use client").
-
+React with hooks and modern conventions
 Tailwind CSS for styling.
-
 Socket.IO client for real-time communication.
 
-Backend
+### Backend
 
 Node.js and Express.js for API endpoints.
-
 Socket.IO for WebSocket handling.
-
 Image compression middleware (e.g., sharp or canvas).
 
-Installation
+### Installation
 
 Clone the repository:
-
-text
-
+```
 git clone
+cd conversicats
+```
 
-cd chat-app
+## Backend setup:
 
-Backend setup:
-
-text
-
-cd backend
-
+```
+cd server
 npm install
-
 cp .env.example .env
-
 npm run dev
+```
 
-Frontend setup:
+### Frontend setup:
 
-text
+```
+cd ../clientnpm installnpm run dev
+```
 
-cd ../frontend
-
-npm install
-
-npm run dev
-
-Usage
+### Usage
 
 Start both backend (npm run dev in /backend) and frontend (npm run dev in /frontend).
 
@@ -100,19 +81,12 @@ chat-app/
 
 └── tailwind.config.js
 
-Environment Variables
+### Environment Variables
 
 Create .env files in both backend and frontend with:
-
-text
-
-PORT=5000
-
-NODE\_ENV=development
-
-MONGODB\_URI=your\_mongo\_connection\_string
-
-JWT\_SECRET=your\_jwt\_secret
+```
+PORT=5000NODE\_ENV=developmentMONGODB\_URI=your\_mongo\_connection\_stringJWT\_SECRET=your\_jwt\_secret
+```
 
 Image Compression
 
